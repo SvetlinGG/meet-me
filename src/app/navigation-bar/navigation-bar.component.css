@@ -6,7 +6,7 @@
     width: 100%;
     height: 100px;
     padding: 20px;
-    background-color:antiquewhite;
+    background-color:rgb(237, 178, 100);
     color: #000;
     display: flex;
     justify-content:right;
@@ -16,24 +16,36 @@
         justify-content: left;
         font-weight: bold;
         color: black;
-        font-size: 1.2em;
+        font-size: 2.2em;
         font-family: 'Poppins';
 
         span {
-            color:blue
+            color:blue;
+            justify-content: left;
         }
+    }
+    .title {
+        text-decoration: none;
+        justify-content: left;
+        font-weight: bold;
+        color:bisque;
+        font-size: 1.5em;
+        font-family:'Courier New', Courier, monospace;
     }
 
     .nav-btn {
     margin-left: 10px;
-    border: 1px solid #000;
+    border: 2px solid #3b15d1;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 10px;
+    font-family: 'Poppins';
     }
     .nav-btn:hover {
     cursor: pointer;
-    background-color: grey; 
+    background-color: rgb(165, 183, 232); 
     color: #fff;
+    box-shadow: 0px 10px 20px rgba(16, 16, 213, 0.4);
+    animation: shake 0.9s ease-in-out;
     }
     
 
