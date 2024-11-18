@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './navigation-bar.component.css'
 })
 export class NavigationBarComponent {
-  title = 'You can start today'
+  title = 'Your journey starts here'
 }
