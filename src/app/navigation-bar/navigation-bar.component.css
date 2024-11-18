@@ -11,45 +11,67 @@
     display: flex;
     justify-content:right;
     align-items: center;
-    .logo {
-        text-decoration: none;
-        justify-content: left;
-        font-weight: bold;
-        color: black;
-        font-size: 2.2em;
-        font-family: 'Poppins';
+  }
+  
+  .nav-bar .logo {
+    position: relative;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+  
+  .nav-bar .logo::after {
+    content: attr(data-text); /* Отразява текста от data-text */
+    position: absolute;
+    top: 100%; /* Под текста */
+    left: 0;
+    right: 0;
+    transform: scaleY(-1); /* Обръща текста вертикално */
+    opacity: 0.4; /* Прозрачност за отражението */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); /* Ефект на избледняване */
+    -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  }
+  
+  .nav-bar .logo span {
+    color: blue;
+    position: relative;
+  }
+  
+  .nav-bar .logo span::after {
+    content: attr(data-text); /* Отразява текста от data-text */
+    position: absolute;
+    top: 100%; /* Под текста */
+    left: 0;
+    right: 0;
+    transform: scaleY(-1); /* Обръща текста вертикално */
+    opacity: 0.4; /* Прозрачност за отражението */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); /* Ефект на избледняване */
+    -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  }
+  .title {
+    text-decoration: none;
+    justify-content: left;
+    font-weight: bold;
+    color:bisque;
+    font-size: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+}
 
-        span {
-            color:blue;
-            justify-content: left;
-        }
-    }
-    
-    }
-    
-    .title {
-        text-decoration: none;
-        justify-content: left;
-        font-weight: bold;
-        color:bisque;
-        font-size: 1.5em;
-        font-family:'Courier New', Courier, monospace;
-    }
-
-    .nav-btn {
-    margin-left: 10px;
-    border: 2px solid #3b15d1;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Poppins';
-    }
-    .nav-btn:hover {
-    cursor: pointer;
-    background-color: rgb(165, 183, 232); 
-    color: #fff;
-    box-shadow: 0px 10px 20px rgba(16, 16, 213, 0.4);
-    animation: shake 0.9s ease-in-out;
-    }
-    
-
-   
+.nav-btn {
+margin-left: 10px;
+border: 2px solid #3b15d1;
+padding: 10px;
+border-radius: 10px;
+font-family: 'Poppins';
+}
+.nav-btn:hover {
+cursor: pointer;
+background-color: rgb(165, 183, 232); 
+color: #fff;
+box-shadow: 0px 10px 20px rgba(16, 16, 213, 0.4);
+animation: shake 0.9s ease-in-out;
+}
+  
