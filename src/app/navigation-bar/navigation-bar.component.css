@@ -1,63 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
-
 .nav-bar {
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    background-color:rgb(237, 178, 100);
-    color: #000;
-    display: flex;
-    justify-content:right;
-    align-items: center;
-  }
-  
-  .nav-bar .logo {
-    position: relative;
-    font-size: 3.5em;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-  }
-  
-  .nav-bar .logo::after {
-    content: attr(data-text); /* Отразява текста от data-text */
-    position: absolute;
-    top: 100%; /* Под текста */
-    left: 0;
-    right: 0;
-    transform: scaleY(-1); /* Обръща текста вертикално */
-    opacity: 0.4; /* Прозрачност за отражението */
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); /* Ефект на избледняване */
-    -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  }
-  
-  .nav-bar .logo span {
-    color: blue;
-    position: relative;
-  }
-  
-  .nav-bar .logo span::after {
-    content: attr(data-text); /* Отразява текста от data-text */
-    position: absolute;
-    top: 100%; /* Под текста */
-    left: 0;
-    right: 0;
-    transform: scaleY(-1); /* Обръща текста вертикално */
-    opacity: 0.4; /* Прозрачност за отражението */
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); /* Ефект на избледняване */
-    -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  }
-  .title {
-    text-decoration: none;
-    justify-content: left;
-    font-weight: bold;
-    color:bisque;
-    font-size: 1.5em;
-    font-family:'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  background-color:rgb(237, 178, 100);
+  color: #000;
+  display: flex;
+  justify-content:right;
+  align-items: center;
+}
+
+.nav-bar .logo {
+  position: relative;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.nav-bar .logo::after {
+  content: attr(data-text); 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  right: 0;
+  transform: scaleY(-1); 
+  opacity: 0.7; 
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)); 
+  -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.nav-bar .logo span {
+  color: blue;
+  position: relative;
+}
+
+.nav-bar .logo span::after {
+  content: attr(data-text); 
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  right: 0;
+  transform: scaleY(-5); 
+  opacity: 0.1; 
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)); 
+  -webkit-mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  mask-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+.title {
+  text-decoration: none;
+  justify-content: left;
+  font-weight: bold;
+  color:bisque;
+  font-size: 1.5em;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .nav-btn {
@@ -74,6 +73,4 @@ color: #fff;
 box-shadow: 0px 10px 20px rgba(16, 16, 213, 0.4);
 animation: shake 0.9s ease-in-out;
 }
-
-
   
