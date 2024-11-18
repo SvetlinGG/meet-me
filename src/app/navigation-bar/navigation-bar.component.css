@@ -35,12 +35,12 @@
 
 .nav-bar .logo span {
   color: blue;
-  position: relative;
+  position: left;
 }
 
 .nav-bar .logo span::after {
   content: attr(data-text); 
-  position: absolute;
+  position: relative;
   top: 50%; 
   left: 0;
   right: 0;
@@ -52,7 +52,8 @@
 }
 .title {
   text-decoration: none;
-  justify-content: left;
+  position: relative;
+
   font-weight: bold;
   color:bisque;
   font-size: 1.5em;
@@ -73,4 +74,13 @@ color: #fff;
 box-shadow: 0px 10px 20px rgba(16, 16, 213, 0.4);
 animation: shake 0.9s ease-in-out;
 }
+.banner {
+  background-image: url('./pic/together.jpg'); /* Relative path */
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+  opacity: 0.4;
+}
+
   
