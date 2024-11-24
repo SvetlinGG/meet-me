@@ -78,7 +78,7 @@ animation: shake 0.9s ease-in-out;
   background-image: url('./pic/together.jpg'); /* Relative path */
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 900px;
   width: 100%;
   opacity: 0.4;
 }
