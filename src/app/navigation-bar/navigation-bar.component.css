@@ -62,10 +62,11 @@
 
 .nav-btn {
 margin-left: 10px;
-border: 2px solid #3b15d1;
+border: 2px solid blue;
 padding: 10px;
 border-radius: 10px;
 font-family: 'Poppins';
+text-shadow: 2px 1px bisque;
 }
 .nav-btn:hover {
 cursor: pointer;
@@ -78,9 +79,10 @@ animation: shake 0.9s ease-in-out;
   background-image: url('./pic/together.jpg'); /* Relative path */
   background-size: cover;
   background-position: center;
-  height: 900px;
+  min-height: 800px;
   width: 100%;
   opacity: 0.4;
+  position: relative;
 }
 
   
