@@ -4,11 +4,15 @@
         <a>Meet<span>Me</span></a>
     </div>
 
-    <div class="nav-btn">Home</div>
-    <div class="nav-btn">Catalog</div>
-    <div class="nav-btn">Registration</div>
-    <div class="nav-btn">Login</div>
-    <div class="nav-btn">Logout</div>
+    <div class="nav-btn" routerLink="/home">Home</div>
+    @if (!isLoggedIn) {
+    
+    <div class="nav-btn" routerLink="/login">Login</div>
+    <div class="nav-btn" routerLink="/register">Registration</div>
+    }
+    <div class="nav-btn" routerLink="/themes">Catalog</div>
+    
+    <div class="nav-btn" routerLink="/logout">Logout</div>
 </div>
 
 <div class="banner"></div>
