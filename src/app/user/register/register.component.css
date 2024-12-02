@@ -1,11 +1,15 @@
 form.login, form.register {
-    width: 40%;
-    margin: 2em auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center form */
+    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Limit the form width */
     text-align: center;
-    background-color: #e4e3e3; 
-    border-radius: 1em;
-    padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
 }
 
 .login fieldset, .register fieldset {
