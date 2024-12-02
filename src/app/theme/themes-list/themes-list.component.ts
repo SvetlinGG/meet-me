@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Theme } from '../../types/theme';
 import { ApiService } from '../../api.service';
-
+/*
 @Component({
   selector: 'app-catalog-list',
   standalone: true,
@@ -23,4 +23,4 @@ export class CatalogListComponent implements OnInit{
       
     });
   }
-}
+}*/
