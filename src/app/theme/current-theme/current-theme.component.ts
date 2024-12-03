@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-current-theme',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './current-theme.component.html',
   styleUrl: './current-theme.component.css'
 })
-export class CurrentThemeComponent {
-
+export class CurrentThemeComponent implements OnInit {
+  constructor(private route: ActivatedRoute){}
+  ngOnInit(): void {
+    
+  }
 }

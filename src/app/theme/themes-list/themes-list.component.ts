@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Theme } from '../../types/theme';
 import { ApiService } from '../../api.service';
-/*
+
 @Component({
   selector: 'app-catalog-list',
   standalone: true,
@@ -17,10 +17,10 @@ export class CatalogListComponent implements OnInit{
   }
   ngOnInit(){
     this.apiService.getThemes().subscribe((themes) => {
-      console.log(themes);
+      
       this.themes = themes;
       this.isLoading = false;
-      
+      console.log({themes});
     });
   }
-}*/
+}
