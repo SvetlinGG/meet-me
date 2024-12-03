@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Theme } from '../../types/theme';
 import { ApiService } from '../../api.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-catalog-list',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './themes-list.component.html',
   styleUrl: './themes-list.component.css'
 })
@@ -20,7 +21,7 @@ export class CatalogListComponent implements OnInit{
       
       this.themes = themes;
       this.isLoading = false;
-      console.log({themes});
+      
     });
   }
 }
