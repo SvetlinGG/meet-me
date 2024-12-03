@@ -62,11 +62,12 @@
 
 .nav-btn {
 margin-left: 10px;
-border: 2px solid blue;
+border: 2px solid li;
 padding: 10px;
 border-radius: 10px;
 font-family: 'Poppins';
 text-shadow: 2px 1px bisque;
+box-shadow: 4px 4px blue;
 }
 .nav-btn:hover {
 cursor: pointer;
