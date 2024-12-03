@@ -47,4 +47,4 @@ app.use(cors());
 app.use(authMiddleware);
 app.use(routes);
 
-app.listen(1000, () => console.log('Server is listening on http://localhost:1000'))
+app.listen(3000, () => console.log('Server is listening on http://localhost:3cd000'))
