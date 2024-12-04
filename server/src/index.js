@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 import { authMiddleware } from './middlewares/authMiddleware.js';
 
 try {
-    await mongoose.connect('mongodb://127.0.0.1:27017');
+    await mongoose.connect('mongodb://localhost:27017');
     console.log('DB Connected!');
     
 } catch (err) {
@@ -43,7 +43,11 @@ app.get('/data', async (req, res) => {
 });
 */
 
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:4200',
+    credentials: true,
+}));
+app.use(express.json())
 app.use(authMiddleware);
 app.use(routes);
 
