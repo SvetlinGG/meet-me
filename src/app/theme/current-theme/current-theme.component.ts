@@ -15,12 +15,12 @@ export class CurrentThemeComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private apiService: ApiService){}
   ngOnInit(): void {
-    //this.route.params.subscribe((data) => {
-      //console.log(data['themeId']);
-   // });
+    
    const id = this.route.snapshot.params['themeId'];
 
 
-    this.apiService.getSingleTheme(id)
+    this.apiService.getSingleTheme(id).subscribe((theme) => {
+      this.theme = theme;
+    })
   }
 }

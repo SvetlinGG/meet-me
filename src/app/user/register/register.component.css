@@ -2,14 +2,15 @@ form.login, form.register {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center form */
-    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+    transform: translate(-50%, -50%) rotateY(10deg) rotateX(10deg); /* 3D rotation */
+    background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
     padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8), 0 10px 30px rgba(0, 0, 0, 0.15); /* Create depth */
     width: 100%;
-    max-width: 400px; /* Limit the form width */
+    max-width: 300px; /* Limit the form width */
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.8s ease;
 }
 
 .login fieldset, .register fieldset {
@@ -49,16 +50,15 @@ form.login, form.register {
 }
 
 .login button, .register button {
-    background-color: #234465;
-    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #fff;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     border: none;
-    border-radius: 0.5em;
-    padding: 0.7em 1.5em;
-    margin-top: 1.5rem;
-    width: 60%;
-    outline: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .login button:hover, .register button:hover {
