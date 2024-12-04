@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './themes-list.component.html',
   styleUrl: './themes-list.component.css'
 })
-export class CatalogListComponent implements OnInit{
+export class ThemesListComponent implements OnInit{
   themes: Theme[] = [];
   isLoading = true;
   constructor(private apiService: ApiService){

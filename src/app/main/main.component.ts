@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { PostsComponent } from './posts/posts.component';
-import { CatalogListComponent } from '../theme/themes-list/themes-list.component';
+import { PostsListComponent } from '../posts-list/posts-list.component';
+import { ThemesListComponent } from '../theme/themes-list/themes-list.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [PostsComponent, CatalogListComponent],
+  imports: [PostsListComponent, ThemesListComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
